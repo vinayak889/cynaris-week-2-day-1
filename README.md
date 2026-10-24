@@ -84,12 +84,6 @@ Includes accessible labels and reduced-motion support for users who prefer fewer
 | Media queries | Adapt layouts to different screen sizes |
 | `prefers-reduced-motion` | Respect motion accessibility preferences |
 
-## 📖 Resources
-
-- [MDN — CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [MDN — Using CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties)
-- [MDN — CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations)
-- [MDN — CSS Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
 
 ## 📦 Deliverables
 
@@ -106,4 +100,3 @@ Includes accessible labels and reduced-motion support for users who prefer fewer
 
 ---
 
-This project was created as part of the Cynaris Learning Full Stack Development learning path.
