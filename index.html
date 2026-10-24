@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Advanced | Week 2 Day 1</title>
+  <link rel="stylesheet" href="advanced_styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home" class="logo">CSS Advanced</a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#animations">Animations</a></li>
+    </ul>
+
+    <button class="btn" id="theme-toggle" type="button"
+      aria-pressed="false">
+      Toggle Theme
+    </button>
+  </nav>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <h1>Advanced CSS Techniques</h1>
+      <p>
+        Explore custom properties, theme switching, animations,
+        pseudo-elements, and modern responsive UI design.
+      </p>
+      <a href="#features" class="btn">Explore Features</a>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">CSS Features</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Custom Properties</h3>
+          <p>Reusable CSS variables for consistent styling and themes.</p>
+        </article>
+
+        <article class="card">
+          <h3>Pseudo-elements</h3>
+          <p>Decorative elements created with ::before and ::after.</p>
+        </article>
+
+        <article class="card">
+          <h3>Smooth Transitions</h3>
+          <p>Polished hover effects and animated interface changes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="animations">
+      <h2 class="section-title">CSS Animations</h2>
+
+      <h3>Loading Spinner</h3>
+      <div class="spinner" role="status" aria-label="Loading"></div>
+
+      <h3>Progress Bar — 75%</h3>
+      <div class="progress"
+        role="progressbar"
+        aria-label="Example progress"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="75">
+        <div class="progress-bar"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cynaris Learning | Week 2 — Day 1 | CSS Advanced</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const page = document.documentElement;
+
+    themeToggle.addEventListener("click", () => {
+      const isDark = page.dataset.theme === "dark";
+
+      page.dataset.theme = isDark ? "light" : "dark";
+      themeToggle.setAttribute("aria-pressed", String(!isDark));
+    });
+  </script>
+</body>
+</html>
