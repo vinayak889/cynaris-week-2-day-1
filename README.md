@@ -98,5 +98,5 @@ Includes accessible labels and reduced-motion support for users who prefer fewer
 **Day:** 1  
 **Topic:** CSS Advanced
 
----
+
 
